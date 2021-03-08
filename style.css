@@ -1,0 +1,81 @@
+:root{
+    --primeColor:rgb(29, 28, 28);
+    --icon:rgb(238, 238, 238);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: ease-in-out .3s;
+}
+
+
+.dark{
+    --primeColor:rgb(231, 230, 230);
+    --icon:rgb(29, 28, 28);
+    background-color: rgb(29, 28, 28);
+    color: rgb(231, 230, 230);
+    
+}
+
+
+h1{
+    margin-top: 20px;
+}
+
+
+
+button{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color:var(--primeColor);
+    color: var(--icon);
+    border-radius: 15px;
+    box-sizing: border-box;
+    
+}
+
+
+button:hover{
+    cursor: pointer;
+    
+    
+   
+}
+
+
+
+.change-sun{
+    animation: move 2s;
+}
+
+.change-moon{
+    animation: moveB 2s;
+}
+
+
+@keyframes move{
+  from{
+      transform: translateX(-500%);
+  }
+  to{
+      transform: translateX(0%);
+  }
+}
+
+
+@keyframes moveB{
+    from{
+        transform: translateX(500%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+  }
